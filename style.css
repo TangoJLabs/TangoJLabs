@@ -290,6 +290,12 @@ hr {
 #github_link {
 	color: white;
 }
+#GH_banner {
+	z-index: 9050;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
 #GPLD {
 	max-width: 250px;
 }

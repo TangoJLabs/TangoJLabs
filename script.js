@@ -183,7 +183,9 @@ $(document).ready(function() {
 			+ ' It also uses the online Thesaurus'
 			+ ' API hosted by Big Huge Labs.'
 			+ '</br>'
-			+ '</br>Click the logo to check it out!');
+			+ '</br><a href="https://play.google.com/store/apps/details?id=com.tangojlabs.matchonym"><img id="GPLD" alt="Get Matchonym on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" /></a>'
+			+ '</br>'
+			+ '</br><a id="GP_att">Android, Google Play and the Google Play logo are trademarks of Google Inc.</a>');
 	});
 	$('#info_screen').click(function() {
 		$('#info_container').css('display', 'none');
