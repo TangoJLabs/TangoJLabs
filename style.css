@@ -1,0 +1,299 @@
+html, body { 
+	height: 100%;
+	width: 100% !important;
+	margin: 0;
+	padding: 0;
+	font-family: Abel;
+	font-size: 24px;
+	font-weight: 200;
+}
+body {
+	background-image: url("TJgray.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+.clear {
+  clear:both;
+}
+#info_screen {
+	z-index: 450;
+	top:0px;
+    left:0px;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 15px;
+	background-color: #005229;
+	opacity: 0.1;
+	cursor: pointer;
+}
+#info_container {
+	z-index: 500;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: 0;
+	margin: 0 auto;
+	background-color: #000000;
+}
+#info_box {
+	z-index: 500;
+	position: relative;
+	top: 50px;
+	width: 100%;
+	background-color: #FFFFFF;
+	text-align: center;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+}
+#info_box_wrapper {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+#info_box_left {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+	width: 45%;
+	min-width: 250px;
+}
+#info_box_right {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+	width: 45%;
+	min-width: 250px;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+.info_box_sub_wrapper {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	max-width: 300px !important;
+	margin: 0 auto;
+	text-align: center;
+}
+#info_box_right_text {
+	position: relative;
+	max-width: 300px;
+	color: #4D4D4D;
+}
+#info_box_logo, #info_box_screenshot, #info_box_screenshot2 {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-style: transparent;
+	border-color: #4D4D4D;
+	border-width: 2px;
+	cursor: pointer;
+}
+.info_img {
+	width: 100%;
+	margin: 20px;
+}
+.body_container {
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+}
+#body_container1 {
+	background-color: #8CC53F;
+	height: 800px;
+}
+#body_container2 {
+	background-color: #FFFFFF;
+	opacity: 0.9;
+	height: 1050px;
+}
+#body_container3 {
+	background-color: #4D4D4D;
+	height: 580px;
+}
+/* #logo_div {
+	position: relative;
+	margin: 0 auto;
+	height: 100px;
+	width: 100px;
+	background-image: url("TJwhite.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+} */
+#about_title, #portfolio_title, #footer_title {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0;
+	text-align: center;
+	color: #FFF;
+	font-family: Open Sans Condensed;
+	font-size: 32px;
+}
+#info_box_title {
+	color: #4D4D4D;
+}
+#footer_middle {
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	overflow: auto;
+}
+#footer_final {
+	display: block;
+	position: relative;
+	width: 100%;
+	color: #FFF;
+	font-family: Open Sans Condensed;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 20px;
+}
+#portfolio_title {
+	color: #4D4D4D;
+}
+hr {
+	display: inline-block;
+	position: relative;
+	width: 30%;
+	margin-left: 25px;
+	margin-right: 25px;
+	border-width: 1px;
+	border-color: #FFF;
+}
+.portfolio_hr {
+	border-color: #4D4D4D;
+}
+.info_box_hr {
+	margin-top: 30px;
+	border-color: #4D4D4D;
+	width: 15%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.about_box, .footer_box {
+	float: left;
+	position: relative;
+	width: 50%;
+	min-width: 300px;
+	height: auto;
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0;
+	text-align: center;
+	color: #FFF;
+}
+.about_box_title, .footer_box_title {
+	font-family: Open Sans Condensed;
+	font-size: 32px;
+}
+#portfolio_container {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+.float_center {
+  float: right;
+  position: relative;
+  left: -50%;
+  text-align: left;
+}
+.float_center > .child {
+  position: relative;
+  left: 50%;
+}
+.portfolio_box {
+	float: left;
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 50px;
+	margin-top: 0px;
+	background-color: #FFF;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-style: transparent;
+	border-color: #4D4D4D;
+	border-width: 2px;
+	cursor: pointer;
+}
+#portfolio_box1 {
+	background-image: url("dronemash.png");
+}
+#portfolio_box2 {
+	background-image: url("Compass.png");
+}
+#portfolio_box3 {
+	background-image: url("matchonym512.png");
+}
+#portfolio_box4 {
+	border-radius: 50%;
+	background-color: #4D4D4D;
+	font-size: 50px;
+	color: #FFF;
+	text-align: center;
+	cursor: default;
+}
+#portfolio_box4_text {
+	float: left;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 135px;
+	margin-left: 7px;
+	font-size: 50px;
+	color: #FFF;
+	text-align: center;
+}
+#facebook {
+	float: left;
+	position: relative;
+	left: calc(50% - 40px);
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	margin-top: 0px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url("facebook_white.png");
+}
+#twitter {
+	float: left;
+	position: relative;
+	left: calc(50% - 40px);
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	margin-top: 0px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url("twitter.png");
+}
+#github_link {
+	color: white;
+}
+#GPLD {
+	max-width: 250px;
+}
+#GP_att {
+	font-size: 12px;
+	line-height: 12px;
+}
