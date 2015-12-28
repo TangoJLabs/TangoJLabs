@@ -162,7 +162,7 @@ $(document).ready(function() {
 			+ ' game app and was the first'
 			+ ' app developed by TangoJLabs.'
 			+ '</br>'
-			+ '</br>Players are presented with a'
+			+ '</br>Players are presented with'
 			+ ' a random word and are required'
 			+ ' to select the closest synonym'
 			+ ' from a list of four other random'
