@@ -68,53 +68,57 @@ $(document).ready(function() {
 	var logoDim = $(window).height();
 	$('body').css('background-size', logoDim);
 	$('#info_container').css('top', $(window).height() + $('#body_container1').height());
-	
+
 	$('#portfolio_box1').click(function() {
+		// window.location.href = "https://crudecl.com";
+		// window.location.replace("https://crudecl.com");
+		$('#info_container').css('display', 'block');
+		$('#info_screen').css('display', 'block');
+		$('#info_box_screenshot2').css('display', 'block');
+		$('#info_box_title').text('Crude CL');
+		// $('#info_img_logo').attr('src', 'dronemash.png');
+		$('#info_img_logo').attr('href', 'https://crudecl.com');
+		$('#info_box_screenshot').css('display', 'none');
+		$('#info_box_screenshot2').css('display', 'none');
+		$('#info_box_right_text').html(
+			'</br>Crude CL is a platform to'
+			+ ' engage a custom algorithm for the'
+			+ ' prediction of the future price of'
+			+ ' crude oil, specifically the NYMEX'
+			+ ' CL Futures Contract.'
+			+ '</br>'
+			+ '</br>'
+			+ ' Crude CL is constantly undergoing'
+			+ ' upgrades so continue to watch'
+			+ ' the project!'
+			+ '</br>'
+			+ '</br>'
+			+ '</br>');
+	});
+	$('#portfolio_box2').click(function() {
 		$('#info_container').css('display', 'block');
 		$('#info_screen').css('display', 'block');
 		$('#info_box_screenshot2').css('display', 'block');
 		$('#info_box_title').text('dronemash');
-		$('#info_box_logo').attr('href', 'https://www.dronemash.com');
-		$('#info_box_screenshot').attr('href', 'https://www.dronemash.com');
-		$('#info_box_screenshot2').attr('href', 'https://www.dronemash.com');
 		$('#info_img_logo').attr('src', 'dronemash.png');
-		$('#info_img_screenshot').attr('src', 'dronemashHome.png');
-		$('#info_img_screenshot2').attr('src', 'dronemashHome2.png');
+		$('#info_box_screenshot').css('display', 'none');
+		$('#info_box_screenshot2').css('display', 'none');
 		$('#info_box_right_text').html(
-			'</br>dronemash is an experimental'
-			+ ' platform for displaying drone'
-			+ ' media content based on location.'
+			'</br>Thanks for visiting!'
 			+ '</br>'
-			+ '</br>We run dronemash on Google App Engine'
-			+ ' with Python for the backend'
-			+ ' scripts and utilize Google\'s'
-			+ ' Python NDB Database for data'
-			+ ' storage.  The NDB database'
-			+ ' is a schemaless object datastore,'
-			+ ' and we utilize this storage'
-			+ ' technology due to its auto'
-			+ ' caching and fast read time.'
 			+ '</br>'
-			+ '</br>dronemash was built to demonstrate'
-			+ ' the basic capabilities of a location-'
-			+ ' based media platform.  TangoJLabs'
-			+ ' is currently developing other'
-			+ ' platforms for location-based media'
-			+ ' sharing.'
+			+ ' Unfortunately, updates to the'
+			+ ' Google Maps libary have rendered'
+			+ ' dronemash unusable at this time.'
 			+ '</br>'
-			+ '</br>We do not actively maintain'
-			+ ' dronemash, so feel free to send'
-			+ ' us an email or use the comment'
-			+ ' form at dronemash.com if you'
-			+ ' notice any bugs.'
 			+ '</br>'
-			+ '</br>Please keep in mind that not all'
-			+ ' features on dronemash are mobile'
-			+ ' friendly.'
+			+ ' Thanks for your interest, please'
+			+ ' check out our other projects!'
 			+ '</br>'
-			+ '</br>Click the logo to check it out!');
+			+ '</br>'
+			+ '</br>');
 	});
-	$('#portfolio_box2').click(function() {
+	$('#portfolio_box3').click(function() {
 		$('#info_container').css('display', 'block');
 		$('#info_screen').css('display', 'block');
 		$('#info_box_screenshot2').css('display', 'none');
@@ -145,45 +149,6 @@ $(document).ready(function() {
 			+ ' app projects in our lineup.'
 			+ '</br>'
 			+ '</br><a href="https://play.google.com/store/apps/details?id=com.tangojlabs.locationdata"><img id="GPLD" alt="Get Location Data on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" /></a>'
-			+ '</br>'
-			+ '</br><a id="GP_att">Android, Google Play and the Google Play logo are trademarks of Google Inc.</a>');
-	});
-	$('#portfolio_box3').click(function() {
-		$('#info_container').css('display', 'block');
-		$('#info_screen').css('display', 'block');
-		$('#info_box_screenshot2').css('display', 'none');
-		$('#info_box_title').text('Matchonym');
-		$('#info_box_logo').attr('href', 'https://play.google.com/store/apps/details?id=matchonym.tangojlabs.com.matchonym');
-		$('#info_box_screenshot').attr('href', 'https://play.google.com/store/apps/details?id=matchonym.tangojlabs.com.matchonym');
-		$('#info_img_logo').attr('src', 'matchonym512.png');
-		$('#info_img_screenshot').attr('src', 'screenshot_matchonym.png');
-		$('#info_box_right_text').html(
-			'</br>Matchonym is a simple Android'
-			+ ' game app and was the first'
-			+ ' app developed by TangoJLabs.'
-			+ '</br>'
-			+ '</br>Players are presented with'
-			+ ' a random word and are required'
-			+ ' to select the closest synonym'
-			+ ' from a list of four other random'
-			+ ' words.'
-			+ '</br>'
-			+ '</br>Players can log in to save their'
-			+ ' score history, and they have the'
-			+ ' option to place a time limit on'
-			+ ' their game which allows the'
-			+ ' opportunity for bonus points'
-			+ ' to be earned if a minimum amount'
-			+ ' of points are earned within the'
-			+ ' time limit.'
-			+ '</br>'
-			+ '</br>Matchonym is powered by the Public'
-			+ ' Domain "Enable" word list hosted'
-			+ ' by The National Puzzler\'s League.'
-			+ ' It also uses the online Thesaurus'
-			+ ' API hosted by Big Huge Labs.'
-			+ '</br>'
-			+ '</br><a href="https://play.google.com/store/apps/details?id=matchonym.tangojlabs.com.matchonym"><img id="GPLD" alt="Get Matchonym on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" /></a>'
 			+ '</br>'
 			+ '</br><a id="GP_att">Android, Google Play and the Google Play logo are trademarks of Google Inc.</a>');
 	});
