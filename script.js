@@ -76,8 +76,8 @@ $(document).ready(function() {
 		$('#info_screen').css('display', 'block');
 		$('#info_box_screenshot2').css('display', 'block');
 		$('#info_box_title').text('Crude CL');
-		// $('#info_img_logo').attr('src', 'dronemash.png');
-		$('#info_img_logo').attr('href', 'https://crudecl.com');
+		$('#info_img_logo').attr('src', 'CrudeCL.png');
+		$('#info_box_logo').attr('href', 'http://crudecl.com');
 		$('#info_box_screenshot').css('display', 'none');
 		$('#info_box_screenshot2').css('display', 'none');
 		$('#info_box_right_text').html(
@@ -93,6 +93,8 @@ $(document).ready(function() {
 			+ ' the project!'
 			+ '</br>'
 			+ '</br>'
+			+ '</br>'
+			+ 'Click on the logo to check it out!'
 			+ '</br>');
 	});
 	$('#portfolio_box2').click(function() {
@@ -101,6 +103,7 @@ $(document).ready(function() {
 		$('#info_box_screenshot2').css('display', 'block');
 		$('#info_box_title').text('dronemash');
 		$('#info_img_logo').attr('src', 'dronemash.png');
+		$('#info_box_logo').attr('href', '');
 		$('#info_box_screenshot').css('display', 'none');
 		$('#info_box_screenshot2').css('display', 'none');
 		$('#info_box_right_text').html(
