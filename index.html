@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
 	<head lang="en">
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=9" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
 		<meta name="keywords" content="apps, app, self-organization, dynamic systems, chaos theory, simulated annealing, fractals" />
 		<meta name="description" content="TangoJLabs is an app lab passionate about facilitating collaborative sourcing and ordering of actionable information." />
 		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 		<title>TangoJLabs</title>
-		<link rel="icon" 
-			type="image/png" 
+		<link rel="icon"
+			type="image/png"
 			href="TJgray_cropped.png" />
 		<!--[if IE]>
 		<script type="text/javascript" src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,15 +16,16 @@
 		<!-- CSS files -->
 		    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Abel' rel='stylesheet' type='text/css'>
 			<link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
-			<link href="style.css" rel="stylesheet" type="text/css">
+			<link href="style-min.css" rel="stylesheet" type="text/css">
 			<link href="cube_style.css" rel="stylesheet" type="text/css">
 			<!-- <link rel="stylesheet" href="stylesheets/styles.css"> -->
     		<!-- <link rel="stylesheet" href="stylesheets/github-light.css"> -->
 		<!-- Script files -->
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-			<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
-			<script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-			<script type="text/javascript" defer src="script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+			<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+			<script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> -->
+			<script type="text/javascript" defer src="script-min.js"></script>
 			<script>
 			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -37,8 +38,8 @@
 			</script>
 	</head>
 	<body>
-		<a href="https://github.com/TangoJLabs/TangoJLabs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
-		</a>
+		<!-- <a id="GH_banner" href="https://github.com/TangoJLabs/TangoJLabs/tree/gh-pages"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+		</a> -->
 		<div id="info_container" style="display: none;">
 			<div id="info_box">
 				<hr class="info_box_hr" noshade>
@@ -91,8 +92,7 @@
 				</br>collaboration.  TangoJLabs
 				</br>is passionate about
 				</br>facilitating collaborative
-				</br>sourcing and ordering of
-				</br>actionable information.
+				</br>environments.
 				</br>________
 			</div>
 			<div class="about_box" id="about_box2">
@@ -126,28 +126,26 @@
 			<div id="portfolio_container">
 				<div class="float_center">
 					<ul class="child">
-						<a class="portfolio_box" id="portfolio_box1">
-						</a>
-						<a class="portfolio_box" id="portfolio_box2">
-						</a>
+						<a class="portfolio_box" id="portfolio_box1"></a>
+						<a class="portfolio_box" id="portfolio_box2"></a>
 					</ul>
 					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
-				<div class="float_center">
+				<!-- <div class="float_center">
 					<ul class="child">
-						<a class="portfolio_box" id="portfolio_box3">
-						</a>
+						<a class="portfolio_box" id="portfolio_box3"></a>
 						<a class="portfolio_box" id="portfolio_box4">
 							<div id="portfolio_box4_text">
-							COMING SOON:
-							</br>think.vote
+								REVEALING SOON:
+								</br>iphone
+								</br>video sharing
 							</div>
 						</a>
 					</ul>
 					<div class="clear"></div>
-				</div>
-				<div class="clear"></div>
+				</div> -->
+				<!-- <div class="clear"></div> -->
 			</div>
 		</div>
 		<div class="body_container" id="body_container3">
@@ -183,13 +181,11 @@
 				</div>
 			</div>
 			<div id="footer_final">
-				Built from scratch; a TangoJLabs project
-				</br>
-				Copyright &copy; 2015 TangoJLabs.  Text and Images may not be reused.
-		        <p>
+				Copyright &copy; 2017 TangoJLabs
+		        <!-- <p>
 		        	This project is maintained by <a id="github_link" href="https://github.com/TangoJLabs">TangoJLabs</a>
 		        </p>
-        		<p><small>Hosted on GitHub Pages</small></p>
+        		<p><small>Hosted on GitHub Pages</small></p> -->
 			</div>
 		</div>
 	</body>
