@@ -9,14 +9,15 @@ $(document).ready(function() {
 		});
 		$('hr').css({
 			'margin-left': 0,
-			'margin-right': 0
+			'margin-right': 0,
+			'width': '20%'
 		});
 		$('#about_title').css({
 			'margin-left': 0,
 			'margin-right': 0
 		});
 		$('#body_container2').css({
-			'height': 1500
+			'height': 800
 		});
 		$('#portfolio_box4_text').css({
 			'font-size': 38,
@@ -32,19 +33,22 @@ $(document).ready(function() {
 		$('.footer_box').css({
 			'left': ($('body').width() - 300) * 0.5
 		});
-		var portfolioBoxDim = $('body').width() - 120;
-		if (portfolioBoxDim > 300) {
-			portfolioBoxDim = 300;
-		}
+		var portfolioBoxDim = $('body').width() - 100;
+		// if (portfolioBoxDim > 300) {
+		// 	portfolioBoxDim = 300;
+		// }
 		$('.portfolio_box').css({
 			'height': portfolioBoxDim,
 			'width': portfolioBoxDim
+			// 'margin-left': 0,
+			// 'margin-right':0
 		});
 		$('.float_center').css({
 			'left': 0
 		});
 		$('.child').css({
-			'left': 0
+			'left': 0,
+			'padding':0
 		});
 		$('#info_box_left').css('min-width', 250);
 		$('.info_img').css({
@@ -53,7 +57,7 @@ $(document).ready(function() {
 		});
 	} else if ($('body').width() < 1050) {
 		$('#body_container2').css({
-			'height': 2000
+			'height': 1000
 		});
 		$('.portfolio_box').css({
 			'left': ($('body').width() - 575) * 0.5
@@ -64,62 +68,67 @@ $(document).ready(function() {
 			'margin-left': 0
 		});
 	}
-	$('#body_container1').css('margin-top', $(window).height());
+	$('#top_container').css('height', $(window).height());
+	// $('#body_container1').css('margin-top', $(window).height());
 	var logoDim = $(window).height();
 	$('body').css('background-size', logoDim);
 	$('#info_container').css('top', $(window).height() + $('#body_container1').height());
 
 	$('#portfolio_box1').click(function() {
+		var win = window.open('http://crudecl.com', '_blank');
+  	win.focus();
 		// window.location.href = "https://crudecl.com";
 		// window.location.replace("https://crudecl.com");
-		$('#info_container').css('display', 'block');
-		$('#info_screen').css('display', 'block');
-		$('#info_box_screenshot2').css('display', 'block');
-		$('#info_box_title').text('Crude CL');
-		$('#info_img_logo').attr('src', 'CrudeCL.png');
-		$('#info_box_logo').attr('href', 'http://crudecl.com');
-		$('#info_box_screenshot').css('display', 'none');
-		$('#info_box_screenshot2').css('display', 'none');
-		$('#info_box_right_text').html(
-			'</br>Crude CL is a platform to'
-			+ ' engage a custom algorithm for the'
-			+ ' prediction of the future price of'
-			+ ' crude oil, specifically the NYMEX'
-			+ ' CL Futures Contract.'
-			+ '</br>'
-			+ '</br>'
-			+ ' Crude CL is constantly undergoing'
-			+ ' upgrades so continue to watch'
-			+ ' the project!'
-			+ '</br>'
-			+ '</br>'
-			+ '</br>'
-			+ 'Click on the logo to check it out!'
-			+ '</br>');
+		// $('#info_container').css('display', 'block');
+		// $('#info_screen').css('display', 'block');
+		// $('#info_box_screenshot2').css('display', 'block');
+		// $('#info_box_title').text('Crude CL');
+		// $('#info_img_logo').attr('src', 'CrudeCL.png');
+		// $('#info_box_logo').attr('href', 'http://crudecl.com');
+		// $('#info_box_screenshot').css('display', 'none');
+		// $('#info_box_screenshot2').css('display', 'none');
+		// $('#info_box_right_text').html(
+		// 	'</br>Crude CL is a platform to'
+		// 	+ ' engage a custom algorithm for the'
+		// 	+ ' prediction of the future price of'
+		// 	+ ' crude oil, specifically the NYMEX'
+		// 	+ ' CL Futures Contract.'
+		// 	+ '</br>'
+		// 	+ '</br>'
+		// 	+ ' Crude CL is constantly undergoing'
+		// 	+ ' upgrades so continue to watch'
+		// 	+ ' the project!'
+		// 	+ '</br>'
+		// 	+ '</br>'
+		// 	+ '</br>'
+		// 	+ 'Click on the logo to check it out!'
+		// 	+ '</br>');
 	});
 	$('#portfolio_box2').click(function() {
-		$('#info_container').css('display', 'block');
-		$('#info_screen').css('display', 'block');
-		$('#info_box_screenshot2').css('display', 'block');
-		$('#info_box_title').text('dronemash');
-		$('#info_img_logo').attr('src', 'dronemash.png');
-		$('#info_box_logo').attr('href', '');
-		$('#info_box_screenshot').css('display', 'none');
-		$('#info_box_screenshot2').css('display', 'none');
-		$('#info_box_right_text').html(
-			'</br>Thanks for visiting!'
-			+ '</br>'
-			+ '</br>'
-			+ ' Unfortunately, updates to the'
-			+ ' Google Maps libary have rendered'
-			+ ' dronemash unusable at this time.'
-			+ '</br>'
-			+ '</br>'
-			+ ' Thanks for your interest, please'
-			+ ' check out our other projects!'
-			+ '</br>'
-			+ '</br>'
-			+ '</br>');
+		var win = window.open('https://feedslant.com', '_blank');
+  	win.focus();
+		// $('#info_container').css('display', 'block');
+		// $('#info_screen').css('display', 'block');
+		// $('#info_box_screenshot2').css('display', 'block');
+		// $('#info_box_title').text('feedslant');
+		// $('#info_img_logo').attr('src', 'feedslant.png');
+		// $('#info_box_logo').attr('href', 'https://feedslant.com');
+		// $('#info_box_screenshot').css('display', 'none');
+		// $('#info_box_screenshot2').css('display', 'none');
+		// $('#info_box_right_text').html(
+		// 	'</br>Feedslant is a news aggregator'
+		// 	+ ' that conveys the current media'
+		// 	+ ' sentiment across top news sites.'
+		// 	+ '</br>'
+		// 	+ '</br>'
+		// 	+ ' Compare the historical'
+		// 	+ ' timeline of breaking news'
+		// 	+ ' for coverage comparisons.'
+		// 	+ '</br>'
+		// 	+ '</br>'
+		// 	+ '</br>'
+		// 	+ 'Click on the logo to check it out!'
+		// 	+ '</br>');
 	});
 	$('#portfolio_box3').click(function() {
 		$('#info_container').css('display', 'block');
