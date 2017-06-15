@@ -7,12 +7,12 @@ html, body {
 	font-size: 24px;
 	font-weight: 200;
 }
-/*body {
+body {
 	background-image: url("TJgray.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-}*/
+}
 /*#all_container {
 	z-index: -1;
 	position: absolute;
@@ -129,7 +129,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
-#top_container {
+/*#top_container {
 	width: 100%;
 	background-color: white;
 	background-image: url("TJgray.png");
@@ -137,7 +137,7 @@ html, body {
 	background-attachment: fixed;
 	background-size: contain;
 	background-position: center;
-}
+}*/
 #body_container1 {
 	background-color: #8CC53F;
 	height: 800px;

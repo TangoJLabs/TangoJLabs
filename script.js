@@ -68,8 +68,8 @@ $(document).ready(function() {
 			'margin-left': 0
 		});
 	}
-	$('#top_container').css('height', $(window).height());
-	// $('#body_container1').css('margin-top', $(window).height());
+	// $('#top_container').css('height', $(window).height());
+	$('#body_container1').css('margin-top', $(window).height());
 	var logoDim = $(window).height();
 	$('body').css('background-size', logoDim);
 	$('#info_container').css('top', $(window).height() + $('#body_container1').height());
