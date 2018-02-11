@@ -10,7 +10,11 @@ html, body {
 body {
 	background-image: url("TJgray.png");
 	background-repeat: no-repeat;
+<<<<<<< HEAD
 	/*background-attachment: fixed;*/
+=======
+/* 	background-attachment: fixed; */
+>>>>>>> origin/gh-pages
 	background-position: center;
 }
 /*#all_container {
